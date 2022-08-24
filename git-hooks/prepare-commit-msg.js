@@ -1,6 +1,6 @@
 const { execSync } = require('child_process');
 
-const files = execSync(`git diff-index --cached HEAD`)
+// const files = execSync(`git diff origin/`)
 
-console.log('提交前',files)
+console.log('提交前')
 
