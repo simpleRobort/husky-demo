@@ -1,0 +1,7 @@
+{
+  "name": "husky-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "<zhangzeyang.27@bytedance.com>",
+  "license": "MIT"
+}
