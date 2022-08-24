@@ -5,14 +5,16 @@
   "author": "<zhangzeyang.27@bytedance.com>",
   "license": "MIT",
   "scripts": {
-    "git-hooks:prepare-commit-msg": "node ./git-hooks/prepare-commit-msg"
+    "git-hooks:prepare-commit-msg": "node ./git-hooks/prepare-commit-msg",
+    "git-hooks:pre-push": "node ./git-hooks/pre-push"
   },
   "devDependencies": {
     "husky": "^4.0.0"
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg":"npm run git-hooks:prepare-commit-msg"
+      "prepare-commit-msg":"npm run git-hooks:prepare-commit-msg",
+      "pre-push":"npm run git-hooks:pre-push"
     }
   }
 }
