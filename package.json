@@ -3,5 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "<zhangzeyang.27@bytedance.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "git-hooks:prepare-commit-msg": "node ./git-hooks/prepare-commit-msg"
+  },
+  "devDependencies": {
+    "husky": "^4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg":"npm run git-hooks:prepare-commit-msg"
+    }
+  }
 }
