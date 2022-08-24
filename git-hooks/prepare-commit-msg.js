@@ -1,6 +1,8 @@
 const { execSync } = require('child_process');
 
-// const files = execSync(`git diff origin/master H`)
+// commit钩子执行如下命令：获取暂存区与上一次commit的差异
+const files = execSync(`git diff --cached --name-status`)
 
-console.log('提交前1')
+
+// process.exit(1)
 

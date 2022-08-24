@@ -1,9 +1,8 @@
-// const { execSync } = require('child_process');
-// const path = require('path');
-// const fs = require('fs');
+const { execSync } = require('child_process');
 
-console.log("push之前")
-console.log(`无权限修改公共组件！1`);
-// process.exit(1)
+// pre-push钩子执行以下命令：获取本地HEAD与origin/master的文件差异
+const files = execSync('git diff origin/master HEAD --name-status')
 
-console.log("无权限修改公共组件！")
+console.log("push之前",files)
+
+process.exit(1)
